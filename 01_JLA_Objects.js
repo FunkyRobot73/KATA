@@ -1,7 +1,7 @@
-let heroes = [   {codeName: "batman", alterEgo: "bruce wayne", species: "human", metapowers: false, powerLevel: 20},
-                {codeName: "superman", alterEgo: "clark kent", species: "kryptonian", metapowers: true, powerLevel: 99},
-                {codeName: "wonder woman", alterEgo: "diana prince", species: "amazon", metapowers: true, powerLevel: 90},
-                {codeName: "green lantern", alterEgo: "hal jordan", species: "human", metapowers: true, powerLevel: 80},
+let heroes = [   batman = {codeName: "batman", alterEgo: "bruce wayne", species: "human", metapowers: false, powerLevel: 20},
+                superman = {codeName: "superman", alterEgo: "clark kent", species: "kryptonian", metapowers: true, powerLevel: 99},
+                wonderWoman = {codeName: "wonder woman", alterEgo: "diana prince", species: "amazon", metapowers: true, powerLevel: 90},
+                greenLantern2 = {codeName: "green lantern", alterEgo: "hal jordan", species: "human", metapowers: true, powerLevel: 80},
                 {codeName: "martian manhunter", alterEgo: "john jones", species: "martian", metapowers: true, powerLevel: 90},
                 {codeName: "flash", alterEgo: "barry allen", species: "human", metapowers: true, powerLevel: 95},
                 {codeName: "aquaman", alterEgo: "arthur curry", species: "atlantian", metapowers: true, powerLevel: 80},
@@ -34,32 +34,34 @@ let jliOriginal = [heroes[4], heroes[0], heroes[11], heroes[20], heroes[21], her
 
 let combinedSpread = [...jlaOriginal, ...jlaDetroit]
 
-const entireJL = function(data) {
+// const entireJL = function(data) {
     
-    let JLA = [];
-    for(let i of data){
-        data.forEach(x => {
-            JLA.push(x);
+//     let JLA = [];
+//     for(let i of data){
+//         data.forEach(x => {
+//             JLA.push(x);
       
-});
-return JLA;
-};
-}
+// });
+// return JLA;
+// };
+// }
 
-const listOfAlterEgos = function(data) {
-    let temp = [];
-    for(let x = 0;  x < data.length; x++) {  //we are gonna loop through the array
-        //console.log(data[x].alterEgo) 
-        temp.push(data[x].alterEgo)
-      }
-      return temp
-      //console.log(instructors[x])
-      //return instructors[longestNameIndex];   
-    };
+// const listOfAlterEgos = function(data) {
+//     let temp = [];
+//     for(let x = 0;  x < data.length; x++) {  //we are gonna loop through the array
+//         //console.log(data[x].alterEgo) 
+//         temp.push(data[x].alterEgo)
+//       }
+//       return temp
+//       //console.log(instructors[x])
+//       //return instructors[longestNameIndex];   
+//     };
 
 
 //console.log(entireJL([jliOriginal, jlaDetroit, jlaSatellite, jlaOriginal]));
 //console.log(listOfAlterEgos(jlaOriginal));
 //console.log(listOfAlterEgos(entireJL(jlaDetroit)));
 //console.log(heroes[11].alterEgo)
-console.log(combinedSpread);
+//console.log(combinedSpread);
+for(let x in heroes)
+console.log(heroes[x].codeName);

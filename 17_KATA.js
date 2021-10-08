@@ -1,4 +1,4 @@
-const urlDecode = function(text) {
+ const urlDecode = function(text) {
   
   let textArray = [text]
   let textArray2 = [];
@@ -12,7 +12,7 @@ textArray = []
 
   for(let x of textArray2) 
     textArray.push(x.replace("=", ":"));
-  
+    
   textArray2 = [];
   for(let x of textArray) 
     textArray2.push(x.replace("=", ":"));
