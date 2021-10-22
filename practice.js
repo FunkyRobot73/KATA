@@ -1,6 +1,10 @@
-let jimmy = "iam the greatest personever";
-message = jimmy.replace(/ /g, "")
-let count = (Math.ceil(Math.sqrt(message.length)))
+function Duck(sound) {
+  this.sound = sound;
+  this.quack = function() {console.log(this.sound);}
+}
 
-stringer = message.replace(message[count], message[count] + " ")
-console.log(stringer);
+let toy = new Duck("Quack Quack");
+toy.quack();
+
+console.log(typeof toy);
+console.log(toy instanceof Duck);
